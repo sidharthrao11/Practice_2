@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 30px;
+      }
+      nav {
+        background-color: crimson;
+        color: aliceblue;
+      }
+      input {
+        height: 50px;
+        width: 50px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style-type: none;
+        padding: 10px 30px;
+      }
+      input{
+        display: none;
+      }
+      .navbar{
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media (max-width: 576px) {
+        input{
+        display: block;
+      }
+        .navbar {
+          display: none;
+        }
+        nav{
+          position: relative;
+        }
+        input :checked + .navbar {
+          display: block;
+          position: absolute;
+          width: 50%;
+          border: 3px solid black;
+          color: aliceblue;
+          background-color: blueviolet;
+          top: 47px;
+          animation-name: jadu;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes jadu {
+          from{
+            margin-left: -200px;
+          }
+          to{
+            margin-left: 100px;
+          }
+
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="row">
+      <div class="logo">
+        <h2>Logo</h2>
+      </div>
+      <input type="checkbox" />
+      <ul class="navbar">
+        <li>Home</li>
+        <li>About</li>
+        <li>Team</li>
+        <li>Services</li>
+        <li>Contact us</li>
+      </ul>
+    </nav>
+  </body>
+</html>

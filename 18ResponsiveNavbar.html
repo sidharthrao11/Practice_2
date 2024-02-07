@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        nav{
+            background-color: rgb(137, 105, 66);
+            color: black;
+        }
+        input{
+            height: 50px;
+            width: 50px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+       }
+       li {
+            list-style-type: none;
+            padding: 10px 30px;
+       }
+       input{
+        display: none;
+      }
+      @media(max-width : 576px){
+             input{
+                display: block;
+             }
+             .navbar{
+                display: none;
+             }
+             nav{
+                position: relative;
+             }
+             input:checked + .navbar{
+                display: block;
+                position: absolute;
+                width: 50%;
+                border: 3px solid black;
+                color: rgb(238, 239, 244);
+                background-color: rgb(43, 226, 223);
+                top: 47px;
+                animation-name: jadu;
+                animation-duration: 2s;
+             }
+            
+    
+      @keyframes jadu{
+        from{
+            margin-left: -200px;
+        }
+        to{
+            margin-left: 100px;
+          }
+      }
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav class="row">
+        <div class="logo">
+            <h2>logo</h2>
+        </div>
+        <input type="checkbox">
+        <ul class="navbar_row">
+            <li>Home</li>
+            <li>About</li>
+            <li>Team</li>
+            <li>Services</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+</body> 
+</html>

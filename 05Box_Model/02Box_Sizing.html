@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+        body{
+            background-color: burlywood;
+        }
+        div[class*='box']{
+            background-color: rgb(67, 131, 243);
+            color: rgb(54, 66, 5);
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 10px solid rgb(226, 12, 12);
+            padding: 20px;
+        }
+        .border-box{
+            box-sizing: border-box;
+           
+        } 
+        .content-box{
+            box-sizing: content-box;
+           
+        }
+    </style>
+</head>
+<body>
+    "NOTE :- use attribute selector and selecet all the classes together using universal(*) selecter border
+             and aplly style. <br>
+              BORDER-BOX property:-Total width => width = 200px - padding (2*20 = 40px) - border (2*10 = 20px) => 140px <br>
+              Total Height => width = 200px - padding (2*20 = 40px) - border (2*10 = 20px) => 140px  <br>
+              <br><br>
+              CONTENT-BOX property :- Total width => width = 200px + padding (2*20 = 40px) + border (2*10 = 20px) => 260px 
+               Total Height => width = 200px + padding (2*20 = 40px) + border (2*10 = 20px) => 260px "
+               <br><hr>
+  
+ 
+    <div class="border-box">Border-box = 140px</div>
+    <hr>
+    <div class="content-box">Content-box = 260px</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to animation</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 170px;
+            border: 5px solid yellow;
+            background-color: green;
+            font-size: 30px;
+            animation-name: jadu;
+            animation-duration: 1s;
+            text-align: center;
+            /*animation-delay: 2s;*/ /*animation will be moved after delay seconds*/
+            /*animation-fill-mode: forwards; /*where animation element will be stopped after completing loop*/
+            /*animation-iteration-count: infinite;*/ /*how many times you want to move our animation*/
+            /*animation-play-state: paused;*/ /*it sets play state of animation.*/
+    
+        }
+        .box1{
+            width: 200px;
+            height: 170px;
+            border: 5px solid rgb(51, 100, 246);
+            background-color: rgb(234, 81, 219);
+            font-size: 30px;
+            animation-name: jadu;
+            animation-duration: 2s;
+            text-align: center;
+        }
+        .box2{
+            width: 200px;
+            height: 170px;
+            border: 5px solid rgb(0, 0, 0);
+            background-color: rgb(93, 194, 93);
+            font-size: 30px;
+            animation-name: jadu;
+            animation-duration: 3s;
+            text-align: center;
+        }
+        .box3{
+            width: 200px;
+            height: 170px;
+            border: 5px solid rgba(23, 68, 5, 0.781);
+            background-color: rgb(64, 239, 233);
+            font-size: 30px;
+            animation-name: jadu;
+            animation-duration: 4s;
+            text-align: center;
+        }
+        p{
+            margin-top: 50px;
+            color: aqua;
+        }
+        @keyframes jadu{
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 1100px;
+               /* margin-right: 0px;*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><p>This is the Jhadu of CSS</p></div>
+    <div class="box1"><p>This is the Jhadu of CSS</p></div>
+    <div class="box2"><p>This is the Jhadu of CSS</p></div>
+    <div class="box3"><p>This is the Jhadu of CSS</p></div>
+</body>
+</html>

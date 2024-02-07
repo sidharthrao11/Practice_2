@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+        *{
+            border: 1px solid rgb(248, 82, 40);
+        }
+        div[class*='box']{
+            padding: 30px;
+            border: 5px dashed rgb(42, 51, 235);
+            display: block;
+            display: inline;
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--"NOTE :- WE USE INLINE-BLOCK PROPERTY TO SET MULTIPLE BOXES INTO A SINGLE LINE. <br>
+          exp:- "-->
+    before
+    <div>Block</div>
+    after
+    <hr>
+    hey how
+    <span>are</span>
+    you
+    <hr>
+    <div class="container">
+        <div class="box1">Box-1</div>
+        <div class="box2">Box-2</div>
+        <div class="box3">Box-3</div>
+    </div>
+</body>
+</html>

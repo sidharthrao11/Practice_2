@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+         .parent+p+p+p{
+                background-color: rgb(219, 88, 211);
+                color: rgb(37, 35, 10);
+               
+        }
+        h1+p+p+p{
+            background-color: rgb(50, 8, 48);
+                color: rgb(219, 207, 48);
+               
+        }
+    
+    </style>
+</head>
+<body>
+    "NOTE:- Using Adjacent sibling selector we can give style to an perticular element giving adress throug upper tag of that perticular tag <br>
+        for example:- h1+p+p(style will be applied on the second nect p after H1 tag.) <br>
+        for using this selector we use + sign. <br> <hr> <br>
+    </p>
+    </div>
+    <h1>Adjacent Sibling Selector( + )</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa vero quae tenetur, aut sunt illum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa vero quae tenetur, aut sunt illum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa vero quae tenetur, aut sunt illum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa vero quae tenetur, aut sunt illum.</p>
+</body>
+</html>

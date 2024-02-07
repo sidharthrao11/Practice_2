@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font size: 25px;
+        }
+        .box{
+            overflow: hidden;
+            overflow: scroll;
+            width: 450px;
+            height: 450px;
+            border: 3px solid red;
+            position: relative;
+        /* position: static;
+        left: 50px ;
+        margin-left: 100px;*/
+                 /*STATIC POSITION is just like auto positioning, its not working on the selected div.
+                 but when we give margin div will bw moved accordingly.*/
+        /*position: relative;
+          left: 100px;
+          top: 100px;
+          right: 10px;*/
+                 /*RELATIVE POSITION is similiar to the static position but there a change in both of them is
+                                     when we give left or top position in static the  div will be not moved
+                                     but im the relative it works the div moves..from give px to the relative position such as left:100px etc!*/
+        }
+        .box img{
+            position: fixed;
+           left: 250px;
+           top: 250px;
+        }
+                 /*FIXED POSITION : when we want to set a object or element or a div at a fixed position we apply the fixed position
+                           then no matter what you scroll the webpage that element will be stick at the fixed position we've given.*/
+        
+        .box img{
+            position: absolute;
+            left: 250px;
+            top: 250px;
+        }
+                 /* ABSOLUTE POSITION is work like fixed postion it will not stick as the fixed position stick.
+                                      absolute position is working accordingly tp its parent div.
+                                      for using bsolute postion we need to give RELATIVE POSITION to the parent div of the element.
+
+   </style>
+</head>
+<body>
+
+    <div class="box">
+          <img src="../../IMAGE/bird.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea, tempore dolorum porro sequi placeat inventore, beatae quibusdam quos sit architecto suscipit magnam aliquid praesentium. Consectetur quia corporis id eos!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.</p>
+    </div>
+    <div class="box-2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempore officia, pariatur consectetur dolor assumenda asperiores enim praesentium? Illo totam aperiam enim debitis ducimus explicabo ad nobis rerum sit nostrum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit cum dolore quasi, eum quia itaque. Eligendi quasi, aperiam, voluptatibus maxime accusamus excepturi ullam provident maiores pariatur praesentium rem et natus.</p>
+    </div>
+</body>
+</html>
