@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters in CSS</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border-radius: 50%;
+            border: 5px solid black;
+            background: url(../IMAGE/bird.jpeg) no-repeat center/cover;
+            /*filter: blur(20px);*/
+            /*filter: brightness(250%);*/
+            /*filter: contrast(250%);*/
+           filter: drop-shadow(30px 30px 40px rgb(0, 255, 123));
+           /*filter: grayscale(80%);*/
+            /*filter: hue-rotate(55deg);*/
+           filter: opacity(40%);
+        }
+        p{
+            background-color: bisque;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filter in CSS</h1>
+    <p>
+       "NOTE : FILTER property in css is basically used to apply graphical effects to the elements, border, background etc!"
+    </p>
+    <hr>
+    <div class="box">
+
+    </div>
+</body>
+</html>

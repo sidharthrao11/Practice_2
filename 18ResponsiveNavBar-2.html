@@ -35,6 +35,9 @@
       .navbar{
         display: flex;
         flex-direction: row;
+        animation-name: jadu;
+        animation-duration: 5s;
+
       }
 
       @media (max-width: 576px) {
@@ -47,7 +50,7 @@
         nav{
           position: relative;
         }
-        input :checked + .navbar {
+        input:checked + .navbar {
           display: block;
           position: absolute;
           width: 50%;
@@ -75,17 +78,21 @@
   </head>
   <body>
     <nav class="row">
-      <div class="logo">
-        <h2>Logo</h2>
-      </div>
-      <input type="checkbox" />
-      <ul class="navbar">
-        <li>Home</li>
-        <li>About</li>
-        <li>Team</li>
-        <li>Services</li>
-        <li>Contact us</li>
-      </ul>
+
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+
+        <input type="checkbox" />
+
+        <ul class="navbar">
+                 <li>Home</li>
+                 <li>About</li>
+                 <li>Team</li>
+                 <li>Services</li>
+                <li>Contact us</li>
+        </ul>
+
     </nav>
   </body>
 </html>

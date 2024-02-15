@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gradient in CSS</title>
+    <style>
+        body{
+           /* background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,120,121,1) 35%, rgba(0,212,255,1) 100%);
+            --took this properties from the google "searched :- gradients in css"*/
+            }
+        .linear-gradient{
+             height: 200px;
+             background: linear-gradient( rgb(251, 255, 0),blue,green);
+             text-align: center;
+             font-size: 20px;
+             color: white;
+        }
+        
+        
+        .radial-gradient{
+            height: 200px;
+            background: radial-gradient(red,blue,green);
+            margin: 20px;
+            text-align: center;
+             font-size: 20px;
+             color: white;
+        }
+        .conic-gradient{
+            height: 200px;
+            background: conic-gradient(yellow,red,rgb(130, 236, 69));
+            margin: 20px;
+            text-align: center;
+             font-size: 20px;
+             color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Gradient in CSS</h1>
+    <hr>
+    <div class="linear-gradient"> "NOTE : in the LINEAR-GRADIENT colors will be filled in a similiar line form.
+        bur we can set them through the degree."</div>
+    <div class="radial-gradient">"NOTE : in the RADIAL-GRADIENT colors will be settled in round circle form"</div>
+    <div class="conic-gradient">"NOTE : in the CONIC GRADIENT colors will be settled in a kind of tringle shape.</div>
 </body>
 </html>
